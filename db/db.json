@@ -65,15 +65,15 @@
   },
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "tipo": "Solicitado"
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo": "Em produção"
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo": "Finalizado"
     }
   ],
@@ -87,6 +87,18 @@
         "Tomate",
         "Salame",
         "Cheddar"
+      ],
+      "status": "Solitado"
+    },
+    {
+      "id": "de7f",
+      "nome": "Bianca",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar",
+        "Tomate",
+        "Pepino"
       ],
       "status": "Solitado"
     }
