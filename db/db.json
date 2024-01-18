@@ -101,6 +101,18 @@
         "Pepino"
       ],
       "status": "Solitado"
+    },
+    {
+      "id": "267a",
+      "nome": "Vitor Davi",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Cheddar",
+        "Salame",
+        "Pepino"
+      ],
+      "status": "Solitado"
     }
   ]
 }
