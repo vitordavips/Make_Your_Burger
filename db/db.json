@@ -113,6 +113,27 @@
         "Pepino"
       ],
       "status": "Solitado"
+    },
+    {
+      "id": "4623",
+      "nome": "Vitoria",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar"
+      ],
+      "status": "Solitado"
+    },
+    {
+      "id": "e0b5",
+      "nome": "George",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Cheddar",
+        "Salame"
+      ],
+      "status": "Solitado"
     }
   ]
 }

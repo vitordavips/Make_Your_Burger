@@ -63,14 +63,21 @@ export default {
         }
     },
     methods:{
-        async getIngredientes(){
+        async getIngredientes() {
+            try {
                 const req = await fetch("http://localhost:3000/ingredientes");
+                if (!req.ok) {
+                    throw new Error(`Erro na solicitação: ${req.status} - ${req.statusText}`);
+                }
 
                 const data = await req.json();
 
                 this.paes = data.paes;
                 this.carnes = data.carnes;
                 this.opcionaisdata = data.opcionais;
+            } catch (error) {
+                console.error('Erro ao obter ingredientes:', error);
+            }   
         },
         async createBurger(e){
 
