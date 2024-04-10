@@ -55,9 +55,9 @@ export default {
             paes: null,
             carnes: null,
             opcionaisdata: null,
-            nome: null,
-            pao: null,
-            carne: null,
+            nome: '',
+            pao: '',
+            carne: '',
             opcionais: [],
             msg: null,
         }
@@ -65,30 +65,35 @@ export default {
     methods:{
         async getIngredientes() {
             try {
-                const req = await fetch("http://localhost:3000/ingredientes");
-                if (!req.ok) {
-                    throw new Error(`Erro na solicitação: ${req.status} - ${req.statusText}`);
+                const reqPaes = await fetch("http://localhost:3000/paes");
+                const reqCarnes = await fetch("htpp://localhost:3000/carnes");
+                const reqOpcionais = await fetch("htpp://localhost:3000/opcionais");
+                
+                if (!reqPaes.ok || !reqCarnes.ok || !reqOpcionais.ok) {
+                    throw new Error(`Erro na solicitação`);
                 }
 
-                const data = await req.json();
+                //const data = await req.json();
 
-                this.paes = data.paes;
-                this.carnes = data.carnes;
-                this.opcionaisdata = data.opcionais;
+                this.paes = await reqPaes.json();
+                this.carnes = await reqCarnes.json();
+                this.opcionaisdata = await reqOpcionais.json();
             } catch (error) {
                 console.error('Erro ao obter ingredientes:', error);
             }   
         },
         async createBurger(e){
 
-            e.preventDefault();
+            e.prevetDefault();
+
+            //console.log(e)
 
             const data = {
                 nome: this.nome,
                 carne: this.carne,
                 pao: this.pao,
                 opcionais: Array.from(this.opcionais),
-                status: "Solitado"
+                status: "Solicitado"
             };
 
             const dataJson = JSON.stringify(data);

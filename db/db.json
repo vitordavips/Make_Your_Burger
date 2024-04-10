@@ -54,11 +54,11 @@
         "tipo": "Tomate"
       },
       {
-        "id": 4,
+        "id": 5,
         "tipo": "Cebola roxa"
       },
       {
-        "id": 4,
+        "id": 6,
         "tipo": "Pepino"
       }
     ]
@@ -79,20 +79,64 @@
   ],
   "burgers": [
     {
-      "id": "b8e1",
-      "nome": "Davi",
-      "carne": "Maminha",
+      "id": "4623",
+      "nome": "Vitoria",
+      "carne": "Alcatra",
       "pao": "Parmesão e Orégano",
       "opcionais": [
-        "Tomate",
-        "Salame",
         "Cheddar"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": "e0b5",
+      "nome": "George",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Cheddar",
+        "Salame"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": "403c",
+      "nome": "Guilherme",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Cheddar",
+        "Salame",
+        "Cebola roxa"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "2a0b",
+      "nome": "Maria",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar",
+        "Salame"
       ],
       "status": "Solitado"
     },
     {
-      "id": "de7f",
-      "nome": "Bianca",
+      "id": "0414",
+      "nome": "Davi",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "opcionais": [
+        "Tomate",
+        "Pepino",
+        "Cebola roxa"
+      ],
+      "status": "Solitado"
+    },
+    {
+      "id": "4a27",
+      "nome": "Boto Cortes TV",
       "carne": "Alcatra",
       "pao": "Parmesão e Orégano",
       "opcionais": [
@@ -103,23 +147,30 @@
       "status": "Solitado"
     },
     {
-      "id": "4623",
-      "nome": "Vitoria",
+      "id": "579f",
+      "nome": "Vitor Davi",
       "carne": "Alcatra",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Cheddar"
-      ],
+      "pao": "3 Queijos",
+      "opcionais": [],
       "status": "Solitado"
     },
     {
-      "id": "e0b5",
-      "nome": "George",
+      "id": "c76d",
+      "nome": "pitoco",
       "carne": "Picanha",
-      "pao": "3 Queijos",
+      "pao": "Italiano Branco",
+      "opcionais": [],
+      "status": "Solitado"
+    },
+    {
+      "id": "b961",
+      "nome": "Davi",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
       "opcionais": [
         "Cheddar",
-        "Salame"
+        "Tomate",
+        "Pepino"
       ],
       "status": "Solitado"
     }
